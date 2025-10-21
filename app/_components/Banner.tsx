@@ -43,14 +43,14 @@ const Banner = () => {
                 <div className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px]">
                     <h1 className="banner-title slide-up-and-fade leading-[.95] text-6xl sm:text-[80px] font-anton">
                         <span className="text-primary">FRONTEND</span>
-                        <br /> <span className="ml-4">DEVELOPER</span>
+                        <br /> <span className="ml-4">UI DEVELOPER</span>
                     </h1>
                     <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
                         Hi! I&apos;m{' '}
                         <span className="font-medium text-foreground">
-                            Tajmirul
+                          Varsha Dharwal 
                         </span>
-                        . A creative Frontend Developer with 3+ years of
+                        . A creative Frontend UI Developer with 2.5+ years of
                         experience in building high-performance, scalable, and
                         responsive web solutions.
                     </p>
@@ -69,7 +69,7 @@ const Banner = () => {
                 <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right">
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            3+
+                            2.5+
                         </h5>
                         <p className="text-muted-foreground">
                             Years of Experience
@@ -85,7 +85,7 @@ const Banner = () => {
                     </div>
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            10K+
+                            5K+
                         </h5>
                         <p className="text-muted-foreground">Hours Worked</p>
                     </div>

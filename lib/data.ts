@@ -1,20 +1,20 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'varshathakurmail1999@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Varsha Dharwal, I am reaching out to you because...',
 
     oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
-    upworkProfile: 'https://www.upwork.com/freelancers/tajmirul',
+    upworkProfile: 'https://www.upwork.com/freelancers/varsha-dharwal',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/varsha-dharwal' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/varsha-dharwal-1b355b244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' },
+    { name: 'resume', url: '/projects/images/Varsha_Dharwal_Resume.pdf' },
+    { name: 'email', url: 'mailto:varshathakurmail1999@gmail.com' },
 ];
 
 export const MY_STACK = {
@@ -48,8 +48,8 @@ export const MY_STACK = {
             icon: '/logo/gsap.png',
         },
         {
-            name: 'Framer Motion',
-            icon: '/logo/framer-motion.png',
+            name: 'Wordpress',
+            icon: '/logo/wordpresslogo.jpg',
         },
         {
             name: 'Sass',
@@ -60,18 +60,36 @@ export const MY_STACK = {
             icon: '/logo/bootstrap.svg',
         },
     ],
+    framwork: [
+        {
+            name: 'adminJs',
+            icon: '/logo/adminJsLogo.jpg',
+        },
+        {
+            name: 'storybook',
+            icon: '/logo/storybook.png',
+        },
+        {
+            name: 'Chakra UI',
+            icon: '/logo/chakraLogo.png',
+        },
+        {
+            name: 'React Material UI',
+            icon: '/logo/react.png',
+        },
+        {
+            name: 'Angular Material UI',
+            icon: '/logo/angularIcon.png',
+        },
+    ],
     backend: [
         {
-            name: 'Node.js',
+            name: 'php',
             icon: '/logo/node.png',
         },
         {
             name: 'NestJS',
             icon: '/logo/nest.svg',
-        },
-        {
-            name: 'Express.js',
-            icon: '/logo/express.png',
         },
     ],
     database: [
@@ -80,16 +98,8 @@ export const MY_STACK = {
             icon: '/logo/mysql.svg',
         },
         {
-            name: 'PostgreSQL',
-            icon: '/logo/postgreSQL.png',
-        },
-        {
             name: 'MongoDB',
             icon: '/logo/mongodb.svg',
-        },
-        {
-            name: 'Prisma',
-            icon: '/logo/prisma.png',
         },
     ],
     tools: [
@@ -110,199 +120,236 @@ export const MY_STACK = {
 
 export const PROJECTS: IProject[] = [
     {
-        title: 'Electro EV',
-        slug: 'electro-ev',
-        liveUrl: 'https://electroev.co.uk/',
-        year: 2025,
+        title: 'EasyWebinar',
+        slug: 'easyWebinar',
+        liveUrl: 'https://easywebinar.com/',
+        year: 2024,
         description: `
-      A complete agency portfolio platform built for Electro EV to showcase their services, blog content, and product offerings. <br/> <br/>
-      
+         EasyWebinar is an all-in-one webinar platform designed to help creators, coaches, and enterprises host <b>Live, On-Demand, and Automated Webinars
       Key Features:<br/>
       <ul>
-        <li>🛠️ Service Display System: Interactive service showcase with synchronized sliders</li>
-        <li>✍️ Blog Management: SEO-friendly blog with categorization and search</li>
-        <li>🛒 Product Catalog: Organized product display with filtering capabilities</li>
-        <li>📱 Fully Responsive: Optimized for all device sizes</li>
-        <li>⚡ Fast Performance: Optimized Next.js frontend with ISR (Incremental Static Regeneration)</li>
+       <li>🎥 <b>Multi-Streaming:</b> Stream to YouTube and reach up to 50,000 attendees</li>
+      <li>⚙️ <b>Automation:</b> Run automated and evergreen webinars with built-in triggers</li>
+      <li>💬 <b>Audience Engagement:</b> Real-time chat, polls, and push offers</li>
+      <li>📊 <b>Analytics:</b> Advanced tracking for every attendee action</li>
+      <li>📧 <b>Email Automation:</b> Pre & post webinar follow-ups</li>
+      <li>🧱 <b>Page Builder:</b> Custom landing pages and embeddable forms</li>
+      <li>🔗 <b>Integrations:</b> Works seamlessly with CRMs, marketing, and email tools</li>
       </ul><br/>
-      
-      Technical Highlights:
-      <ul>
-        <li>Implemented complex slider synchronization logic using Swiper.js</li>
-        <li>Customized Payload CMS admin panel for intuitive content management</li>
-        <li>Developed reusable UI components with shadcn for design consistency</li>
-        <li>Configured efficient data fetching strategies in Next.js</li>
-      </ul>
+    
+
+    <b>Industries Served:</b><br/>
+    Coaching • Product Launches • Demos • Corporate Training • Conferences • Workshops<br/><br/> 
       `,
         role: `
-      Full-Stack Developer <br/>
-      Owned the entire development lifecycle:
+      UI & Frontend Developer <br/>
+      Owned the entire development lifecycle and aslo handled the Routing part:
       <ul>
-        <li>✅ Backend: Configured Payload CMS with custom collections for services, blogs, and products</li>
-        <li>🎨 Frontend: Built all UI components using Tailwind CSS and shadcn</li>
-        <li>🔄 State Management: Implemented client-side data fetching and caching</li>
-        <li>🖥️ CMS Customization: Created admin interfaces for content editors</li>
-        <li>🚀 Deployment: Set up CI/CD pipeline for Vercel hosting</li>
-        <li>🧩 Third-Party Integration: Added Swiper.js for interactive sliders</li>
-      </ul>
+      <li>✅ <b>Frontend:</b> Built dynamic pages using React and Tailwind CSS</li>
+      <li>🔄 <b>State Management:</b> Implemented React Hook Form for lead forms</li>
+      <li>🎨 <b>UI Components:</b> Designed reusable elements with Material UI</li>
+      <li>⚡ <b>Animation:</b> Added micro-interactions with GSAP</li>
+      <li>🌐 <b>Integration:</b> Embedded external APIs for live webinars and analytics</li>
+      <li>🚀 <b>Optimization:</b> Enhanced performance and SEO using best practices</li>
+    </ul>
       `,
+      techStack: [
+        'React',
+        'Tailwind CSS',
+        'Material UI',
+        'GSAP',
+        'React Hook Form',
+        'Swiper.js',
+        'WordPress',
+        'PHP'
+      ],
+        thumbnail: '/projects/images/easywebinar1.png',
+        longThumbnail: '',
+        images: [
+            '/projects/images/easywebinar1.png',
+            '/projects/images/easywebinar2.png',
+        ],
+    },
+    {
+        title: 'EasyDMARC',
+        slug: 'easydmarc',
+        liveUrl: 'https://easydmarc.com/',
+        year: 2025,
+        description: `
+          EasyDMARC is a leading <b>Email Security and DMARC Compliance Platform</b> that protects businesses from phishing, spoofing, and email-based cyber threats while enhancing deliverability and global compliance.<br/><br/>
+      
+          <b>Key Features:</b><br/>
+          <ul>
+            <li>🔐 <b>DMARC, SPF & DKIM Management:</b> Complete setup, configuration, and monitoring to protect domains</li>
+            <li>📈 <b>Smart Dashboard:</b> Displays analytics and compliance reports in a user-friendly interface</li>
+            <li>⚙️ <b>Managed Services:</b> Dedicated support for complete DMARC enforcement and setup</li>
+            <li>🌍 <b>Global Compliance:</b> Adheres to GDPR, HIPAA, PCI DSS, and DORA regulations</li>
+            <li>🧩 <b>Security Tools:</b> Includes SPF, DKIM, and BIMI checkers, phishing link analyzer, and DNS lookup tools</li>
+            <li>📬 <b>Email Deliverability:</b> Improves sender reputation and ensures safe message delivery</li>
+          </ul><br/>
+      
+         
+      
+          <b>Educational Contribution:</b><br/>
+          EasyDMARC Academy offers free cybersecurity courses to help IT professionals master SPF, DKIM, and DMARC fundamentals.
+        `,
+        role: `
+          <b>Frontend Developer</b><br/>
+          Designed and developed a <b>responsive and high-performance marketing website</b> for the EasyDMARC platform using WordPress and Bootstrap.<br/><br/>
+      
+          <ul>
+            <li>✅ <b>Frontend:</b> Built interactive web pages using HTML5, CSS3, and Bootstrap</li>
+            <li>💻 <b>CMS Integration:</b> Customized WordPress themes for flexible content management</li>
+            <li>🎨 <b>UI/UX:</b> Created consistent layouts and visual elements matching brand identity</li>
+            <li>📱 <b>Responsive Design:</b> Ensured cross-browser and mobile responsiveness using Bootstrap grid system</li>
+            <li>⚡ <b>Performance Optimization:</b> Minimized load time with optimized media and scripts</li>
+            <li>🔗 <b>jQuery:</b> Added interactivity through sliders, animations, and form validations</li>
+            <li>🚀 <b>Deployment:</b> Managed hosting and maintenance through WordPress environment</li>
+          </ul>
+        `,
         techStack: [
-            'Next.js',
-            'Payload CMS',
-            'Tailwind CSS',
-            'shadcn',
-            'Swiper.js',
-            'React Hook Form',
-            'Vercel',
+          'HTML5',
+          'CSS3',
+          'Bootstrap',
+          'jQuery',
+          'WordPress'
         ],
-        thumbnail: '/projects/thumbnail/mti-electronics.webp',
-        longThumbnail: '/projects/long/mti-electronics.webp',
+        thumbnail: '/projects/images/easyDmarc1.png',
+        longThumbnail: '/projects/long/easydmarc.webp',
         images: [
-            '/projects/images/mti-electronics-1.webp',
-            '/projects/images/mti-electronics-2.webp',
+          '/projects/images/easyDmarc1.png',
+          '/projects/images/easyDmarc2.png',
         ],
-    },
-    {
-        title: 'Epikcart',
-        slug: 'epikcart',
+      },
+      {
+        title: 'RocketSlide',
+        slug: 'rocketslide',
+        liveUrl: 'https://rocketslide.fr/',
+        year: 2025,
+        description: `
+          <b>RocketSlide</b> is an <b>AI-powered Presentation Builder</b> that enables users to create, customize, and enhance professional presentations effortlessly with advanced automation and design intelligence.<br/><br/>
+      
+          <b>About the Platform:</b><br/>
+          RocketSlide transforms raw content into beautifully designed presentations in minutes. With smart templates, multilingual support, and AI-driven suggestions, it’s built for professionals, educators, startups, and marketing teams worldwide.<br/><br/>
+      
+          <b>Key Features:</b>
+          <ul>
+            <li>🚀 <b>AI-Powered Presentation Creation:</b> Instantly generate slides using AI with design and content recommendations</li>
+            <li>🎨 <b>Customizable Templates:</b> Choose from a wide range of industry-specific templates for business, education, or events</li>
+            <li>🧠 <b>Real-time AI Suggestions:</b> Get intelligent layout and tone-matching support while editing slides</li>
+            <li>🌐 <b>Multi-language Support:</b> Create presentations in English, Spanish, Hindi, and other major languages</li>
+            <li>📈 <b>Analytics Dashboard:</b> Track user statistics such as generated slides, active users, and satisfaction rate</li>
+            <li>🤝 <b>Collaboration:</b> Share or download presentations for seamless teamwork</li>
+            <li>🔒 <b>Data Security:</b> Secured with Google reCAPTCHA and Cloudflare CDN</li>
+          </ul><br/>
+      
+         
+        `,
+        role: `
+          <b>UI Frontend Developer</b><br/>
+          Responsible for designing and developing the <b>responsive and user-focused interface</b> of the RocketSlide AI Presentation platform.<br/><br/>
+      
+          <ul>
+            <li>🎨 <b>UI/UX Implementation:</b> Translated Figma designs into responsive web layouts using HTML, CSS, and Bootstrap</li>
+            <li>💻 <b>Frontend Development:</b> Developed interactive and accessible web pages with clean code structure</li>
+            <li>⚙️ <b>JavaScript & jQuery:</b> Added dynamic functionalities such as carousels, dropdowns, animations, and form validations</li>
+            <li>🌍 <b>Localization Support:</b> Integrated multilingual UI (English, Spanish, Hindi, etc.) for a global audience</li>
+            <li>📱 <b>Responsive Design:</b> Ensured mobile-first approach across devices using Bootstrap grid system</li>
+            <li>🚀 <b>Performance Optimization:</b> Optimized assets, minimized scripts, and enhanced load times</li>
+            <li>🔗 <b>CMS Integration:</b> Customized WordPress sections for easy content updates and SEO-friendly structure</li>
+          </ul>
+        `,
         techStack: [
-            'React',
-            'Redux',
-            'React i18n',
-            'Tailwind CSS',
-            'Framer Motion',
-            'debouncing',
-            'Api Integration',
+          'HTML5',
+          'CSS3',
+          'jQuery',
+          'Bootstrap',
+          'WordPress',
+          'Google Analytics',
+          'Cloudflare',
+          'Microsoft Clarity'
         ],
-        thumbnail: '/projects/thumbnail/epikcart.jpg',
-        longThumbnail: '/projects/long/epikcart.jpg',
+        thumbnail: '/projects/images/rocketSlide1.png',
+        longThumbnail: '/projects/long/easydmarc.webp',
         images: [
-            '/projects/images/epikcart-1.png',
-            '/projects/images/epikcart-2.png',
-            '/projects/images/epikcart-3.png',
-            '/projects/images/epikcart-4.png',
-            '/projects/images/epikcart-5.png',
+          '/projects/images/rocketSlide1.png',
+          '/projects/images/rocketSlide2.png',
+          '/projects/images/rocketSlide3.png',
         ],
-        liveUrl: 'https://demo.epikcart.siphertech.com/',
-        year: 2023,
-        description: `Epikcart is a feature-rich, scalable e-commerce platform tailored for large businesses. It features dynamic product filtering, multi-language support with RTL, advanced inventory management, order tracking, and refund systems, offering a comprehensive solution for multi-vendor operations.`,
-        role: `As the frontend developer in a team of five, I: <br/>
-        - Built the frontend from scratch using React, Redux, RTK Query, and Tailwind CSS.<br/>
-        - Developed dynamic filtering logic for the product search page with admin-configurable parameters.<br/>
-        - Integrated multi-language support with React i18n, including RTL handling.<br/>
-        - Delivered a responsive, user-friendly interface in collaboration with the UI/UX designer.`,
-    },
-    {
-        title: 'Resume Roaster',
-        slug: 'resume-roaster',
+      },
+      {
+        title: 'RemaME',
+        slug: 'remame',
+        liveUrl: 'https://remame.softuvo.click/',
+        year: 2025,
+        description: `
+          <b>RemaME</b> is a modern <b>Mental Health & Wellness Platform</b> that connects users with certified reprogrammers (mental health professionals) to promote emotional well-being and mental awareness through accessible online counseling, group therapy, and self-care guidance.<br/><br/>
+      
+          <b>About the Platform:</b><br/>
+          RemaME empowers individuals, couples, and teens to access confidential and compassionate mental health support. Through intuitive UI and a guided wellness process, it makes professional help more approachable for people from all backgrounds.<br/><br/>
+      
+          <b>Key Features:</b>
+          <ul>
+            <li>🧘 <b>Online Counseling & Reprogrammers:</b> Find and book certified therapists for various mental health needs</li>
+            <li>💬 <b>Confidential Sessions:</b> Ensures privacy and data security for every client interaction</li>
+            <li>📅 <b>Easy Booking System:</b> Simple scheduling and availability checking for sessions</li>
+            <li>🌍 <b>Community Support:</b> Connect with a global mental health community to share experiences and resources</li>
+            <li>🧩 <b>Holistic Approach:</b> Covers anxiety, depression, relationship issues, stress management, and self-awareness</li>
+            <li>📊 <b>Wellness Tracking:</b> Tracks user progress through counseling stages — Assessment, Sessions, and Tracking</li>
+            <li>📱 <b>Responsive Design:</b> Mobile-friendly and accessible interface for users across all devices</li>
+          </ul><br/>
+      
+         
+        `,
+        role: `
+          <b>UI Frontend Developer</b><br/>
+          Contributed to the design and development of the <b>frontend interface</b> for RemaME’s online mental health and wellness platform, ensuring accessibility, performance, and user engagement.<br/><br/>
+      
+          <ul>
+            <li>🎨 <b>UI/UX Development:</b> Built responsive and visually calming layouts using Tailwind CSS and Laravel Blade templates</li>
+            <li>💻 <b>Frontend Implementation:</b> Developed modern, SEO-friendly pages using HTML5, CSS3, and jQuery</li>
+            <li>⚙️ <b>Dynamic Components:</b> Integrated modals, sliders, and interactive forms with jQuery for smooth user experience</li>
+            <li>📱 <b>Responsive Design:</b> Ensured full compatibility across mobile, tablet, and desktop devices</li>
+            <li>🛡️ <b>Security & Optimization:</b> Improved site performance and load time via Cloudflare CDN and Nginx server optimization</li>
+            <li>🌐 <b>Cross-Platform Compatibility:</b> Implemented accessibility and browser support for diverse user demographics</li>
+            <li>🧠 <b>Content Integration:</b> Structured pages for About, FAQ, Services, and Testimonials with easy CMS updates</li>
+            <li>📈 <b>Analytics Setup:</b> Integrated Google Analytics and Microsoft Clarity for user behavior tracking</li>
+          </ul>
+        `,
         techStack: [
-            'GPT-4',
-            'Next.js',
-            'Postgressql',
-            'Prisma',
-            'Tailwind CSS',
+          'HTML5',
+          'CSS3',
+          'Tailwind CSS',
+          'jQuery',
+          'Laravel',
+          'PHP',
+          'Cloudflare',
+          'Nginx',
+          'Google Font API',
+          'Font Awesome'
         ],
-        thumbnail: '/projects/thumbnail/resume-roaster.jpg',
-        longThumbnail: '/projects/long/resume-roaster.jpg',
+        thumbnail: '/projects/images/remame1.png',
+        longThumbnail: '/projects/long/remame.webp',
         images: [
-            '/projects/images/resume-roaster-1.png',
-            '/projects/images/resume-roaster-2.png',
-            '/projects/images/resume-roaster-3.png',
+          '/projects/images/remame1.png',
+          '/projects/images/remame2.png',
         ],
-        liveUrl: 'https://resume-roaster.vercel.app/',
-        year: 2023,
-        description:
-            'Resume Roaster is a web application designed to provide tailored resume feedback and professional writing services. Built with Next.js, PostgreSQL, Prisma, and Tailwind CSS, it integrates GPT-4 for AI-powered recommendations. The platform also includes peer-to-peer reviews with a points-based system, fostering a collaborative and engaging experience. Targeting freshers, experienced professionals, and programmers, it helps optimize resumes for job-specific success.',
-        role: `As the sole developer and business owner, I:<br/>
-        - Designed and developed the platform end-to-end using Next.js, PostgreSQL, Prisma, and Tailwind CSS.<br/>
-        - Integrated GPT-4 for AI-driven feedback and insights.<br/>
-        - Implemented complex SQL queries, including one to identify the top two resumes based on user points.`,
-    },
-    {
-        title: 'Real Estate',
-        slug: 'property-pro',
-        techStack: [
-            'React.js',
-            'Redux',
-            'Tailwind CSS',
-            'React i18n',
-            'Framer Motion',
-        ],
-        thumbnail: '/projects/thumbnail/property-pro.jpg',
-        longThumbnail: '/projects/long/property-pro.jpg',
-        images: [
-            '/projects/images/property-pro-1.png',
-            '/projects/images/property-pro-2.png',
-            '/projects/images/property-pro-3.png',
-        ],
-        liveUrl: 'https://demo.propertypro.siphertech.com/',
-        year: 2023,
-        description:
-            'PropertyPro is a real estate management platform offering users a seamless experience to explore, manage, and view property listings. The application emphasizes accessibility and responsive design, ensuring a smooth interface across devices.',
-        role: `As the frontend developer, I:<br/>
-        - Built the frontend using React, Redux, RTK Query, Framer Motion, and Tailwind CSS.<br/>
-        - Integrated dynamic state management for efficient handling of property data.<br/>
-        - Implemented multi-language support with React i18n to cater to diverse audiences.<br/>
-        - Enhanced user interaction with animations and transitions using Framer Motion.`,
-    },
-    {
-        title: 'Consulting Finance',
-        slug: 'crenotive',
-        techStack: ['HTML', 'CSS & SCSS', 'Javascript', 'Bootstrap'],
-        thumbnail: '/projects/thumbnail/consulting-finance.jpg',
-        longThumbnail: '/projects/long/consulting-finance.jpg',
-        images: [
-            '/projects/images/consulting-finance-1.png',
-            '/projects/images/consulting-finance-2.png',
-            '/projects/images/consulting-finance-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
-        liveUrl: 'https://crenotive.netlify.app/',
-        year: 2023,
-        description:
-            'I developed Crenotive, a portfolio website using Html, SASS, and jQuery to showcase services and expertise. The design focuses on responsive user experience and effective presentation of professional achievements.',
-        role: ``,
-    },
-    {
-        title: 'devLinks',
-        slug: 'devLinks',
-        techStack: ['Next.js', 'Formik', 'Drag & Drop', 'Tailwind CSS'],
-        thumbnail: '/projects/thumbnail/devLinks.jpg',
-        longThumbnail: '/projects/long/devLinks.jpg',
-        images: [
-            '/projects/images/devLinks-1.png',
-            '/projects/images/devLinks-2.png',
-            '/projects/images/devLinks-3.png',
-        ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
-        liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
-        year: 2023,
-        description: `One of the most challenging projects in Frontend Mentor.<br/><br/>
-
-            I developed a LinkSharing App as part of the Frontend Mentor challenge, utilizing React, Redux, and Tailwind CSS to create a responsive and feature-rich platform. The app allows users to share, save, and explore links, with a focus on intuitive design and smooth navigation. Advanced state management ensures efficient data handling for user interactions.`,
-        role: ``,
-    },
+      }
+      
+      
+      
+   
 ];
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Frontend & UI Developer',
+        company: 'Softuvo Solutions',
+        duration: 'March 2025 - August 2025',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
-    },
-    {
-        title: 'Frontend Engineer',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
-    },
-    {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Associate UI Developer',
+        company: 'Softobiz Solutions',
+        duration: 'January 2023 - Feb 2025',
     },
 ];
