@@ -50,13 +50,13 @@ const Button = ({
     ...rest
 }: Props) => {
     const variantClasses = {
-        primary: `bg-primary text-primary-foreground  hover:bg-primary-hover`,
+        primary: `bg-primary text-primary-foreground hover:bg-primary-hover`,
         secondary: `bg-secondary text-secondary-foreground hover:bg-secondary-hover`,
         success: `bg-green-500 text-white hover:bg-green-600`,
         warning: `bg-orange-500 text-white hover:bg-orange-600`,
         danger: `bg-destructive text-destructive-foreground hover:bg-destructive/70`,
         info: `bg-blue-500 text-white hover:bg-blue-600`,
-        light: `bg-background-active text-foreground hover:bg-background-active`,
+        light: `bg-background-light text-foreground hover:bg-background-light/80`,
         dark: `bg-foreground text-background hover:bg-foreground/80`,
         link: `text-foreground hover:text-primary`,
         'no-color': '',
@@ -68,7 +68,7 @@ const Button = ({
     );
 
     const buttonClasses = cn(
-        `group h-12 px-8 inline-flex justify-center items-center gap-2 text-lg uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden`,
+        `group h-12 px-8 inline-flex justify-center items-center gap-2 text-lg uppercase font-anton tracking-widest outline-none transition-colors relative overflow-hidden focus-ring`,
         variantClasses,
         { [iconClasses]: icon },
         className,

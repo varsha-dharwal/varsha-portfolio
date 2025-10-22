@@ -4,33 +4,43 @@
 
 @layer base {
     :root {
-        --background: 0 0% 13%;
-        --background-light: 0 0% 19%;
-        --foreground: 0 0% 87%;
+        /* Professional dark theme (neutral slate + emerald accent) */
+        --background: 222 18% 10%;
+        --background-light: 222 18% 15%;
+        --foreground: 220 20% 95%;
 
-        --card: 0 0% 3.9%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 3.9%;
-        --popover-foreground: 0 0% 98%;
+        --card: 222 18% 12%;
+        --card-foreground: 220 20% 96%;
+        --popover: 222 18% 12%;
+        --popover-foreground: 220 20% 96%;
 
-        --primary: 140 100% 47%;
-        --primary-foreground: 0 0% 13%;
-        --secondary: 193 100% 47%;
-        --secondary-foreground: 0 0% 13%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 71%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
+        /* Accent system */
+        --primary: 158 64% 52%;            /* emerald-500 */
+        --primary-foreground: 160 84% 10%;
+        --primary-hover: 158 64% 46%;      /* emerald-600 */
+
+        --secondary: 217 91% 60%;          /* sky-500 */
+        --secondary-foreground: 217 100% 12%;
+        --secondary-hover: 217 91% 55%;    /* sky-600 */
+
+        --muted: 220 14% 16%;
+        --muted-foreground: 220 14% 65%;
+        --accent: 220 14% 18%;
+        --accent-foreground: 220 14% 96%;
+
+        --destructive: 0 72% 46%;
         --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 24%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 220 70% 50%;
-        --chart-2: 160 60% 45%;
-        --chart-3: 30 80% 55%;
-        --chart-4: 280 65% 60%;
-        --chart-5: 340 75% 55%;
+
+        --border: 220 14% 25%;
+        --input: 220 14% 18%;
+        --ring: 158 64% 52%;
+
+        /* Charts (harmonized) */
+        --chart-1: 217 91% 60%;
+        --chart-2: 158 64% 52%;
+        --chart-3: 43 96% 56%;
+        --chart-4: 271 91% 65%;
+        --chart-5: 343 82% 62%;
     }
 }
 
@@ -39,7 +49,7 @@
         display: none;
     }
     * {
-        @apply border-border !cursor-none;
+        @apply border-border;
     }
     body {
         @apply bg-background text-foreground font-roboto-flex;
@@ -53,5 +63,11 @@
 
     .markdown-text ul {
         @apply pl-5 mt-2 list-disc;
+    }
+
+    /* Focus ring for accessibility */
+    .focus-ring:focus-visible {
+        outline: none;
+        box-shadow: 0 0 0 3px hsl(var(--ring) / 0.35);
     }
 }

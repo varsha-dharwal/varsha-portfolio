@@ -1,4 +1,4 @@
-# 🚀 My Portfolio Website
+<!-- # 🚀 My Portfolio Website
 
 ![image](https://github.com/user-attachments/assets/ade45c4b-b2cb-46cb-b8a6-31cad3bd0c5a)
 
@@ -36,4 +36,32 @@ If you'd like to contribute or suggest improvements, feel free to open an issue 
 _This readme is inspired from [Brittany Chiang's github](https://github.com/bchiang7/v4)_
 
 ## 📄 License
-This project is open source and available under the [MIT License](https://github.com/VarshaDharwal/portfolio-2.0/blob/main/LICENSE).
+This project is open source and available under the [MIT License](https://github.com/VarshaDharwal/portfolio-2.0/blob/main/LICENSE). -->
+
+# 🚀 My Portfolio Website
+
+![Portfolio Screenshot](https://github.com/varsha-dharwal)
+
+This is my personal portfolio website built using Next.js, gsap animations.
+
+---
+
+## 🌟 About
+
+This portfolio showcases my projects, skills,  design system and experience. All content (projects, text, images) has been replaced with my own work.
+
+---
+
+## ⚠️ Forking / Attribution
+
+This project is inspired by Tajmirul.  
+---
+
+## 🛠 Installation & Setup
+
+First, install dependencies:
+
+```bash
+npm install
+
+

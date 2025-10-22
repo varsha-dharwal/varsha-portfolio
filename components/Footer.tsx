@@ -37,14 +37,14 @@ const Footer = async () => {
                         className="leading-none text-muted-foreground hover:underline hover:text-white"
                     >
                         Design & built by Varsha Dharwal
-                        <div className="flex items-center justify-center gap-5 pt-1">
+                        {/* <div className="flex items-center justify-center gap-5 pt-1">
                             <span className="flex items-center gap-2">
                                 <Star size={18} /> {stargazers_count}
                             </span>
                             <span className="flex items-center gap-2">
                                 <GitFork size={18} /> {forks_count}
                             </span>
-                        </div>
+                        </div> */}
                     </a>
 
                     {/* Note: If you are not Varsha Dharwal, use this copyright message instead */}

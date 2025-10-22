@@ -6,10 +6,10 @@ import { useRouter } from 'next/navigation';
 import { GENERAL_INFO, SOCIAL_LINKS } from '@/lib/data';
 
 const COLORS = [
-    'bg-yellow-500 text-black',
-    'bg-blue-500 text-white',
-    'bg-teal-500 text-black',
-    'bg-indigo-500 text-white',
+    'bg-primary text-primary-foreground',
+    'bg-secondary text-secondary-foreground',
+    'bg-foreground text-background',
+    'bg-primary text-foreground',
 ];
 
 const MENU_LINKS = [
@@ -128,7 +128,7 @@ const Navbar = () => {
                                         >
                                             <span
                                                 className={cn(
-                                                    'size-3.5 bg-white/20 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
+                                                    'size-3.5 rounded-full flex items-center justify-center group-hover:scale-[200%] transition-all',
                                                     COLORS[idx],
                                                 )}
                                             >
