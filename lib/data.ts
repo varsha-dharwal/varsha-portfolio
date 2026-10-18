@@ -341,7 +341,38 @@ export const PROJECTS: IProject[] = [
    
 ];
 
-export const MY_EXPERIENCE = [
+export const MY_EXPERIENCE: {
+    title: string;
+    company: string;
+    duration: string;
+    subtitle?: string;
+    location?: string;
+    details?: string[];
+}[] = [
+    {
+        title: 'Senior UI UX Designer and Developer',
+        company: 'Zetech University',
+        location: 'Kenya',
+        duration: 'June 2026 – August 2026 (Contract-based)',
+        subtitle: 'University Website Redesign — Development',
+        details: [
+            'Redesigned the Zetech University website with a modern and user-focused UI/UX, improving the overall visual design, navigation, and user experience.',
+            'Designed and developed responsive layouts to ensure a consistent and seamless experience across desktop, tablet, and mobile devices.',
+            'Worked on the frontend development of the Integration Hub project, implementing responsive UI components and frontend interfaces based on design and project requirements.',
+        ],
+    },
+    {
+        title: 'UI | Frontend Developer',
+        company: 'OZ Outsourcing',
+        location: 'Mohali, India',
+        duration: 'November 2025 – January 2026 (Contract-based)',
+        subtitle: 'Transportation Tracking & Monitoring System',
+        details: [
+            'Designed and developed a responsive user interface for the Transportation Tracking & Monitoring System using HTML, CSS, and JavaScript, ensuring smooth performance across desktop, tablet, and mobile devices.',
+            'Implemented a real-time tracking dashboard UI to display vehicle location, status, and route information in a clear and user-friendly layout.',
+            'Integrated Dark Mode and Light Mode theme switching, improving user experience and accessibility with dynamic theme handling using JavaScript.',
+        ],
+    },
     {
         title: 'Frontend & UI Developer',
         company: 'Softuvo Solutions',

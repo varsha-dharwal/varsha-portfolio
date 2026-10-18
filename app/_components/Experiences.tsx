@@ -59,15 +59,30 @@ const Experiences = () => {
                 <div className="grid gap-14">
                     {MY_EXPERIENCE.map((item) => (
                         <div key={item.title} className="experience-item">
-                            <p className="text-xl text-muted-foreground">
-                                {item.company}
-                            </p>
-                            <p className="text-5xl font-anton leading-none mt-3.5 mb-2.5">
+                            <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-6">
+                                <p className="text-xl text-muted-foreground">
+                                    {item.company}
+                                    {item.location && ` · ${item.location}`}
+                                </p>
+                                <p className="text-base text-muted-foreground sm:text-right">
+                                    {item.duration}
+                                </p>
+                            </div>
+                            <p className="text-3xl sm:text-5xl font-anton leading-tight sm:leading-none mt-3.5 mb-2.5">
                                 {item.title}
                             </p>
-                            <p className="text-lg text-muted-foreground">
-                                {item.duration}
-                            </p>
+                            {item.subtitle && (
+                                <p className="text-lg font-medium mb-2">
+                                    {item.subtitle}
+                                </p>
+                            )}
+                            {item.details && (
+                                <ul className="list-disc pl-5 space-y-1 text-base leading-relaxed text-muted-foreground">
+                                    {item.details.map((detail) => (
+                                        <li key={detail}>{detail}</li>
+                                    ))}
+                                </ul>
+                            )}
                         </div>
                     ))}
                 </div>
